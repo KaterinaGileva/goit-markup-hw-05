@@ -565,22 +565,19 @@ margin-bottom: 16px;
     height: 92px;
     border: 1px solid var(--icons-cl);
     border-radius: 4px;
-    transition: background-color var(--fast-anim) var(--timing-function),
-    border-color var(--fast-anim) var(--timing-function);
+    transition: border-color var(--fast-anim) var(--timing-function);
     
 }
-    
+   
+.clients-link:hover {
+    border-color: var(--accent-cl);
+}
 
 .clients-icon {
-    fill: var(--icons-cl);
+   fill: var(--icons-cl);
+   transition: fill var(--fast-anim) var(--timing-function);
 }
 
-.clients-link:hover
-{
-    border-color: var(--accent-cl);
-    fill: var(--accent-cl);
-    
-}
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon
