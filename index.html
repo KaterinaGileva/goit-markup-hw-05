@@ -48,12 +48,25 @@
 
     <!--Герой-->
 
-    <section class="hero">
-    <div class="hero-container">
-        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn" type="button">Заказать услугу</button>
+<section class="hero">
+<div class="hero-container">
+    <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+    <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wrapper">
+            <button class="modal-btn" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20px" height="20px">
+            <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 
+                416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 
+                412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 
+                0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75
+                 0 45.25l-105.4 105.4L310.6 361.4z"/>
+            </svg>
+            </button>
         </div>
-    </section>
+    </div>
+</div>
+</section>
 
         <!--Наши преимущества-->
 
@@ -108,15 +121,18 @@
     <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
-    <li class="item">
+    <li class="gallery-item">
         <a><img src="./images/gallery/box-1.jpg" alt="Картинка программист" width="370" height="294">
-        </a>
+        </a> 
+       <p class="gallery-paragraph">Десктопные приложения</p>
     </li>
-    <li class="item" >
+    <li class="gallery-item" >
         <img src="./images/gallery/box-2.jpg" alt="Телефоны на мониторе" width="370" height="294">
+    <p class="gallery-paragraph">Мобильные приложения</p>
     </li>
-    <li class="item">
+    <li class="gallery-item">
         <img src="./images/gallery/box-3.jpg" alt="Ячейки" width="370" height="294">
+        <p class="gallery-paragraph">Дизайнерские решения</p>
     </li>
 
 </ul>
@@ -385,7 +401,7 @@
     </div>
     </div>
 </footer>
-
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
